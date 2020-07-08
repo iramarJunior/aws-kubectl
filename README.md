@@ -21,6 +21,12 @@ kubectl create secret generic aws-secret \
 ### or
 
 ```bash
-#modify src/aws-secret.yaml
+# modify src/aws-secret.yaml
 kubectl apply -f src/aws-secret.yaml
 ```
+
+## Create cronJob
+```bash
+kubectl apply -f src/aws-registry-credential-cronjob.yaml
+# trigger the first run
+``` 
