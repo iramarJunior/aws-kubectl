@@ -1,6 +1,11 @@
 # aws-login
 A Kubernetes cronJob to access the Amazon ECR Registries. 
 
+## Git Clone
+```git
+git clone https://github.com/iramarJunior/aws-kubectl.git
+```
+
 ## Create a Secret
 
 ```bash
@@ -22,11 +27,11 @@ kubectl create secret generic aws-secret \
 
 ```bash
 # modify src/aws-secret.yaml
-kubectl apply -f src/aws-secret.yaml
+kubectl apply -f templates/aws-secret.yaml
 ```
 
 ## Create cronJob
 ```bash
-kubectl apply -f src/aws-registry-credential-cronjob.yaml
+kubectl apply -f templates/aws-registry-credential-cronjob.yaml
 # trigger the first run
 ``` 
