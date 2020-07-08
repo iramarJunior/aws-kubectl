@@ -17,3 +17,10 @@ kubectl create secret generic aws-secret \
     --from-literal=AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
     --from-literal=AWS_REGION=$AWS_REGION
 ```
+
+### or
+
+```bash
+#modify src/aws-secret.yaml
+kubectl apply -f src/aws-secret.yaml
+```
