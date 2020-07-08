@@ -1,6 +1,8 @@
 # aws-login
 A Kubernetes cronJob to access the Amazon ECR Registries. 
 
+[![Docker Pulls](https://img.shields.io/appveyor/build/iramarjunior/aws-kubectl)](https://hub.docker.com/r/iramarjunior/aws-kubectl/)
+
 ## Git Clone
 ```git
 git clone https://github.com/iramarJunior/aws-kubectl.git
